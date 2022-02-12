@@ -1,14 +1,24 @@
+// This display input tag
+let displayInput = document.getElementById('inp');
+
+// Assigning key value to display
 function assignNumberToValueField(keyValue) {
-    let inputValue = document.getElementById('inp');
-    inputValue.value += keyValue;
+    displayInput.value += keyValue;
 }
 
+// Delete display value from from last digit
+function deleteValue() {
+    displayInput.value = displayInput.value.slice(0, -1);
+}
+
+// Calculation part with the help of built in eval() method
 function calculator() {
-    const inputValue = document.getElementById('inp');
-    const total = eval(inputValue.value);
-    inputValue.value = total;
+    const total = eval(displayInput.value);
+    displayInput.value = total;
 }
 
+// Clear display values
 function clearValue() {
-    document.getElementById('inp').value = null;
+    displayInput.value = null;
 }
+

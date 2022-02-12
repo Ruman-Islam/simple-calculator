@@ -5,6 +5,7 @@
     background-color: #e8e8e8;
     padding: 10px;
     border: 1px solid #777;
+    position: relative;
 }
 
 .main-bar {
@@ -29,4 +30,11 @@
 
 .last input {
     width: 126px;
+}
+
+.copyRight {
+    position: absolute;
+    right: 12px;
+    margin-top: 2px;
+    font-size: 10px;
 }
